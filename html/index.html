@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, maximum-scale=1.0, user-scalable=no" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="renderer" content="webkit" />
+  <title>Recore App Example</title>
+
+  <link rel="stylesheet" type="text/css" href="//g.alicdn.com/??platform/common/s/1.1/global/global.css,uxcore/uxcore-kuma/2.2.1/orange.min.css">
+
+  <script src="//alinw.alicdn.com/platform/c/??jquery/1.11.3/dist/jquery.min.js,lodash/3.10.1/lodash.min.js,react/15.1.0/react.js,react/15.1.0/react-dom.js,rsvp.js/3.1.0/rsvp.min.js,natty-db/0.3.16/dist/natty-db.pc.min.js,reflux/0.3.0/dist/reflux.min.js"></script>
+
+  <!-- Nowa Server 注入位置 -->
+  <!-- nowa server injects -->
+
+  <!-- 项目样式资源加载 -->
+  <link rel="stylesheet" href="/app.css">
+  
+  <script>
+  window.__config = {
+    env: 'daily', // local, daily, prepub, production
+    locale: 'zh-cn',
+  };
+  </script>
+</head>
+
+<body class="zh-cn">
+  <input type="hidden" id="_csrf_token_" value="airfe23pjwjfowjfoi">
+  <div id="App"></div>
+
+  <!-- 项目脚本资源加载 -->
+  <script crossorigin="anonymous" src="./app-zh-cn.js"></script>
+  <script crossorigin="anonymous" src="./index-zh-cn.js"></script>
+</body>
+
+</html>

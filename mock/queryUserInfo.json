@@ -1,0 +1,9 @@
+{
+  "success": true,
+  "content": {
+    "name": "Corleone",
+    "gender": "male",
+    "age": 32,
+    "bio": "A man who never fall"
+  }
+}

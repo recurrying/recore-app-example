@@ -1,0 +1,26 @@
+{
+    "extends": "airbnb",
+    "parser": "babel-eslint",
+    "env": {
+        "browser": true,
+        "node": true
+    },
+    "plugins": [
+        "react"
+    ],
+    "globals": {
+        "_": false,
+        "revo": false,
+        "React": false,
+        "ReactDOM": false
+    },
+    "rules": {
+        "no-underscore-dangle": "off",
+        "class-methods-use-this": "off",
+        "react/forbid-prop-types": "off",
+        "react/react-in-jsx-scope": "off",
+        "react/jsx-indent": "off",
+        "react/jsx-first-prop-new-line": ["warn", "never"],
+        "react/jsx-filename-extension": "off"
+    }
+}

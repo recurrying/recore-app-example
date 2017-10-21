@@ -1,0 +1,42 @@
+{
+  "name": "recore-app-example",
+  "assets": {
+    "type": "command",
+    "command": {
+      "cmd": [
+        "tnpm ii",
+        "tnpm run cloud"
+      ]
+    }
+  },
+  "options": {
+    "type": "uxcore",
+    "template": "/Users/samoay/.nowa-gui/template/nowa-template-uxcore-v_4",
+    "npm": "http://registry.npm.alibaba-inc.com",
+    "vars": {
+      "locale": "zh-cn",
+      "__LOCAL__": true
+    },
+    "buildvars": {
+      "__LOCAL__": [false],
+      "locale": [ "zh-cn", "en" ]
+    },
+    "pages": true,
+    "lazyload": true,
+    "loose": true,
+    "injects": [
+      "uxcore/assets/iconfont.css",
+      "uxcore/assets/orange.css",
+      "uxcore",
+      "@ali/inner-uxcore/assets/orange.css",
+      "@ali/inner-uxcore"
+    ],
+    "alias": {
+      "components":"components",
+      "i18n": "i18n"
+    },
+    "historyApiFallback": {
+      "/foo": "/bar.html"
+    }
+  }
+}

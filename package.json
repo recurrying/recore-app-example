@@ -1,0 +1,30 @@
+{
+  "name": "recore-app-example",
+  "author": "jinhong.zjh",
+  "version": "1.0.0",
+  "description": "An example of recore application",
+  "repository": {
+    "type": "git",
+    "url": "git@gitlab.alibaba-inc.com:platform/hr-center.git"
+  },
+  "scripts": {
+    "start": "nowa server",
+    "build": "nowa build",
+    "cloud": "nowa build -d .package",
+    "eslint": "nowa eslint"
+  },
+  "homepage": "http://gitlab.alibaba-inc.com/platform/hr-center",
+  "license": "MIT",
+  "dependencies": {
+    "@ali/inner-uxcore": "^0.6.0",
+    "classnames": "^2.2.5",
+    "i18n-helper": "~1.1.1",
+    "natty-fetch": "^2.5.2",
+    "refast": "~1.2.3",
+    "uxcore": "~0.15.18"
+  },
+  "devDependencies": {
+    "nowa": "^1",
+    "nowa-build": "^1"
+  }
+}
