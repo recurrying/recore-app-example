@@ -15,7 +15,7 @@ const labels = {
     gender: '性别',
     age: '年龄',
     bio: '简介',
-  }
+  },
 };
 
 export default class View extends Component {

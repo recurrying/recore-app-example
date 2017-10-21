@@ -10,7 +10,7 @@ import logic from './logic';
 import './View.less';
 
 export default class View extends Component {
-  static displayName = "PageIndex";
+  static displayName = 'PageIndex';
 
   constructor(props) {
     super(props, logic);
