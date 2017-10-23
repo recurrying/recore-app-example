@@ -34,7 +34,7 @@
     "alias": {
       "components":"components",
       "i18n": "i18n",
-      "variables": "variables"
+      "variables": "app/variables.js"
     },
     "historyApiFallback": {
       "/foo": "/bar.html"
