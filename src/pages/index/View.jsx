@@ -3,9 +3,10 @@
  * component.
  */
 import { Component } from 'refast';
-import i18n from 'i18n';
 import Button from 'uxcore/lib/Button';
 import UserInfo from 'components/user-info';
+import i18n from 'i18n';
+import variables from 'variables';
 import logic from './logic';
 import './View.less';
 

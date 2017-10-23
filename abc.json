@@ -33,7 +33,8 @@
     ],
     "alias": {
       "components":"components",
-      "i18n": "i18n"
+      "i18n": "i18n",
+      "variables": "variables"
     },
     "historyApiFallback": {
       "/foo": "/bar.html"
