@@ -34,7 +34,7 @@
     "alias": {
       "components":"components",
       "i18n": "i18n",
-      "variables": "app/variables.js"
+      "recore": "lib/recore"
     },
     "historyApiFallback": {
       "/foo": "/bar.html"
