@@ -2,6 +2,10 @@
  * The logic code for recore application pages, its just a combination
  * of pure functions to handle remote request and state change
  */
+import recore from 'recore';
+
+const revo = recore.get('revo');
+
 export default {
   defaults(props) {
     return {

@@ -2,20 +2,16 @@
  * The boot script for recore application, do your all initiation and global
  * actions here.
  */
-import nattyFetch from 'natty-fetch';
-
-import './app.less';
+import recore, { revo, i18nLocale } from 'recore';
 import services from './services';
+import i18n from '../i18n';
+import './app.less';
 
-// TODO: should use revo instead
-const Context = nattyFetch.context(services.options);
-const gateways = {};
-services.gateways.forEach((item) => {
-  gateways[item.name] = {
-    url: item.url,
-    mockUrl: item.mockUrl,
-  };
+// init revo
+recore.set('revo', revo(services));
+
+// init i18n
+// recore.config('locale', 'zh-cn');
+recore.use(i18nLocale, {
+  translations: i18n,
 });
-Context.create('recore', gateways);
-
-window.revo = Context.api.recore;

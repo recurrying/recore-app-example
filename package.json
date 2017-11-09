@@ -17,14 +17,19 @@
   "license": "MIT",
   "dependencies": {
     "@ali/inner-uxcore": "^0.6.0",
+    "@ali/vu-revo": "^0.2.0",
     "classnames": "^2.2.5",
     "i18n-helper": "~1.1.1",
+    "lodash": "^4.17.4",
     "natty-fetch": "^2.5.2",
+    "react": "15.x",
+    "react-dom": "15.x",
     "refast": "~1.2.3",
     "uxcore": "~0.15.18"
   },
   "devDependencies": {
     "nowa": "^1",
-    "nowa-build": "^1"
+    "nowa-build": "^1",
+    "prop-types": "15.x"
   }
 }

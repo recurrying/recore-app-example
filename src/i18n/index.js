@@ -4,33 +4,7 @@
  */
 
 /* eslint-disable */
-import i18nHelper from 'i18n-helper';
-
 const localLangs = require(`./${locale}`);
-const { __mcms: mcmsLangs } = window;
 
-let fromMcms = false;
-let langs = localLangs;
-if (mcmsLangs) {
-  fromMcms = true;
-  langs = mcmsLangs;
-}
-
-let i18n = i18nHelper(langs);
-if (fromMcms) {
-  const i18nFunc = i18nHelper(langs);
-
-  i18n = (key, ...args) => {
-    let searchKey = `appPrefix.${key}`;
-
-    let text = i18nFunc(searchKey, ...args);
-    if (text === searchKey) {
-      text = i18nFunc(`common.${key}`, ...args);
-    }
-
-    return text;
-  };
-}
-
-export default i18n;
+export default localLangs;
 /* eslint-enable */
